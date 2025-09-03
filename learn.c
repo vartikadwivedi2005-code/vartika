@@ -1,10 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    for(int i=1;i<=10;i++)
-    {
-        if(i%2>=1)
-        printf("%d\n",i);
-    }
-    return 0;
+   int num = 123;
+   int original = num;
+   int res = 0;
+   while(num != 0) 
+   {
+      int lastdigit = num % 10;
+      res=  res * 10 + lastdigit;
+      num = num/10;
+   }
+   if(original==res)
+     printf("pallindrome");
+   else
+    printf("not pallindrome");  
+
+   printf("\nReversed number is:%d",res);
+   return 0;
 }
+
