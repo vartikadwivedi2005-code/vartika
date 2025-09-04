@@ -2,6 +2,7 @@
  int main()
 {
     int n, rev=0, temp;
+    printf("Enter your choice:");
     scanf("%d", &n);
     if (n < 0) {
         printf("Not Palindrome\n");
