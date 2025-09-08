@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-for(int i=1;i<=3;i++)
+for(int i=0;i<3;i++)
 {
-    for(int j=1;j<=2-i;j++)
+    for(int j=0;j<=i;j++)
     {
         printf(" ");
     }
-    for(int k=1;k<=i;k++)
+    for(int k=3;k>i;k--)
     {
-        printf(" *");
+        printf("*");
     }
     printf("\n");
 }
