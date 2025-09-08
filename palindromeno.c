@@ -6,6 +6,7 @@
     scanf("%d", &n);
     if (n < 0) {
         printf("Not Palindrome\n");
+    
         return 0;
     }
     temp = n;
