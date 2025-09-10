@@ -8,7 +8,7 @@ int main()
     {
         for(int j=0;j<n;j++)
         {
-            if(i==n/2 || j==n/2)
+            if(i==j || i+j==n-1)
             {
                 printf("*");
             
