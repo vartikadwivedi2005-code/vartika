@@ -10,11 +10,11 @@ int main()
         {
           printf("*");
         }
-        for(int k=3;k>i;k--)
+        for(int k=n-1;k>i;k--)
         { 
             printf(" ");
         }
-        for(int p=3;p>i;p--)
+        for(int p=n-1;p>i;p--)
         {
             printf(" ");
         }
@@ -27,11 +27,11 @@ int main()
     }
     for(int i=0;i<n;i++)
     {
-        for(int j=n;j>i;j--)
+        for(int j=n-1;j>i;j--)
         {
             printf("*");
         }
-        for(int k=0;k<i;k++)
+        for(int k=0;k<=i;k++)
         {
             printf(" ");
         }
@@ -39,7 +39,7 @@ int main()
         {
             printf(" ");
         }
-        for(int k=n;k>i;k--)
+        for(int k=n-1;k>i;k--)
         {
             printf("*");
         }
