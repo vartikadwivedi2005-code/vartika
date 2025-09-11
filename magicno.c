@@ -11,12 +11,8 @@ int magicno()
         sum=sum+lastdigit;
         num=num/10;
     }
-    while (num>10)
-    {
-        int lastdigit=num%1;
-        num=num/10;
-    }
     printf("SUM OF THE NUMBER:%d",sum);
+    
     
     
     
