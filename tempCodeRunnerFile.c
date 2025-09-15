@@ -1,28 +1,31 @@
-#include<stdio.h>
-int magicno()
-{
-    int num=1234;
-    int sum=0;
-    
-    while (num>0)
-    {
-        int lastdigit=num%10;
+#include <stdio.h>
+
+int is_magic_number(int n) {
+    while (n > 9) {
+        int sum = 0;
+        int temp = n;
         
-        sum=sum+lastdigit;
-        num=num/10;
+        while (temp > 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+        n = sum;
     }
-    while (num>10)
-    {
-        int lastdigit=num%1;
-        num=num/10;
-    }
-    printf("SUM OF THE NUMBER:%d",sum);
-    
-    
-    
+    return n == 1;  // Returns 1 if true, 0 if false
 }
-int main()
-{
-    magicno();
+
+void print_magic_numbers(int limit) {
+    printf("Magic numbers up to %d:\n", limit);
+    
+    for (int i = 1; i <= limit; i++) {
+        if (is_magic_number(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    print_magic_numbers(100);
     return 0;
 }

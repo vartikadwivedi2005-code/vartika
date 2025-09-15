@@ -12,6 +12,8 @@ int magicno()
         num=num/10;
     }
     printf("SUM OF THE NUMBER:%d",sum);
+     
+}
     
     
     
