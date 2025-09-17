@@ -1,0 +1,12 @@
+
+
+
+
+int plusFuncInt(int x, int y){
+    return x+y;
+}
+double plusFuncDouble(double x, double y)
+    return x+y;
+int main() {
+    int mynum1 = plusFunction
+}   
